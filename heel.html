@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Classic Heel</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+
+<body>
+<a href="index.html">Back</a>
+    <div id="menu">
+        <a href="index.html">Home</a>
+        <a href="About.html">About</a>
+        <a href="contact.html">Contact</a>
+    </div>
+
+    <div class="product-details">
+
+        <div class="product-image">
+            <img src="images/heel.jpg" alt="classic heel">
+        </div>
+
+        <div class="product-information">
+
+            <h1>Classic Heel</h1>
+
+            <p class="details-price">R459.00</p>
+
+            <p>
+              Elegant silver heels featuring a stylish strappy design. These heels are perfect for completing a sophisticated evening or formal outfit.
+            </p>
+            <h2>Product Information</h2>
+
+<table class="product-table">
+  <p>Features:
+
+Silver finish
+Strappy design
+High heel
+Elegant appearance
+Ideal for parties, weddings and formal events
+    </p>
+     <table class="product-table">
+    <tr>
+        <th>Product</th>
+        <td>Heels</td>
+    </tr>
+
+    <tr>
+        <th>Material</th>
+        <td>Synthetic / PU</td>
+    </tr>
+
+    <tr>
+        <th>Size</th>
+        <td>3-8</td>
+    </tr>
+
+    <tr>
+        <th>Style</th>
+        <td>Strappy High Heels</td>
+    </tr>
+
+    <tr>
+        <th>Colour</th>
+        <td>Sliver</td>
+    </tr>
+
+    <tr>
+        <th>Availability</th>
+        <td>In Stock</td>
+    </tr>
+</table>
+
+            <p><strong>Colour:</strong>Sliver</p>
+
+            <p><strong>Material:</strong> Leather</p>
+
+         <!-- The Buy Now Button -->
+    <button class="boutique-btn" onclick="showPopup()">Buy Now</button>
+
+    <!-- The Custom Message Box Layout -->
+    <div class="modal-overlay" id="cartModal">
+        <div class="modal-box">
+            <h3>Shopping Bag</h3>
+            <p>Item has been added to your cart!</p>
+            <button class="close-btn" onclick="hidePopup()">Continue Shopping</button>
+        </div>
+    </div>
+
+     <script>
+        function showPopup() {
+            document.getElementById('cartModal').style.display = 'flex';
+        }
+
+        function hidePopup() {
+            document.getElementById('cartModal').style.display = 'none';
+        }
+        
+            <script>
+        function showPopup() {
+            document.getElementById('cartModal').style.display = 'flex';
+        }
+
+        function hidePopup() {
+            document.getElementById('cartModal').style.display = 'none';
+        }
+    </script>
+
+    <script>
+    function showPopup() {
+        document.getElementById('cartModal').style.display = 'flex';
+        
+     
+        setTimeout(function() {
+            window.location.href = "index.html"; 
+        }, 1500); 
+    }
+
+    function hidePopup() {
+        document.getElementById('cartModal').style.display = 'none';
+    }
+    </script>
+
+
+
+</body>
+
+</html>

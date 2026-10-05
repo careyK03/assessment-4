@@ -1,0 +1,272 @@
+.store-heading {
+    font-family: 'Playfair Display', serif;
+    font-size: 42px;
+    font-weight: 600;
+    letter-spacing: 3px;
+    color: #B08D57;
+    text-align: center;
+    margin: 20px 0;
+}
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+    padding: 40px;
+    max-width: 1400px;
+    margin: auto;
+}
+
+.product {
+    text-align: center;
+}
+
+.product img {
+    width: 100%;
+    height: 280px;
+    object-fit: contain;
+    display: block;
+}
+
+.product h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 18px;
+    color: #3B2A24;
+    margin-top: 15px;
+    margin-bottom: 5px;
+}
+
+.product p {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    color: #B08D57;
+    margin-top: 5px;
+}
+
+
+
+#menu{
+      width:100%;
+      height:50px;
+      background-color:#B08D57;
+      padding-top: 12px;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+    
+}
+
+#menu a {
+    color: #ffffff;                    
+    font-family: Helvetica, sans-serif;
+    font-size: 20px;                   
+    text-decoration: none;            
+    font-weight: 800;                  
+    padding-left: 20px;
+    padding-right: 20px;
+    transition: color 0.3s ease;
+    
+}
+
+#menu a:hover{
+       color:#3B2A24;
+}
+.product-table{
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    font-family: Arial, sans-serif;
+}
+
+.product-table th,
+.product-table td {
+    padding: 12px;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+.product-table th {
+    width: 40%;
+    background-color: #f5f1eb;
+    color: #3B2A24;
+}
+
+.product-table td {
+    background-color: white;
+    color: #555;
+}
+/* 1. Style for the main Buy Now button */
+        .boutique-btn {
+            background-color: #111111;
+            color: #ffffff;
+            font-family: 'Helvetica Neue', Arial, sans-serif;
+            font-size: 16px;
+            font-weight: 600;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            padding: 15px 35px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .boutique-btn:hover {
+            background-color: #444444;
+        }
+
+        /* 2. Style for the background overlay (hides the rest of the page slightly) */
+        .modal-overlay {
+            display: none; /* Hidden by default */
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.4); /* Dimmed background */
+            z-index: 1000;
+            align-items: center;
+            justify-content: center;
+        }
+
+        /* 3. Style for the actual custom message box */
+        .modal-box {
+            background-color: #ffffff;
+            padding: 30px;
+            border-radius: 8px;
+            text-align: center;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+            font-family: 'Helvetica Neue', Arial, sans-serif;
+            max-width: 400px;
+            width: 90%;
+        }
+
+        .modal-box h3 {
+            margin-top: 0;
+            color: #111111;
+        }
+
+        .modal-box p {
+            color: #666666;
+            margin-bottom: 20px;
+        }
+
+        /* 4. Style for the Close button inside the popup */
+        .close-btn {
+            background-color: #111111;
+            color: white;
+            border: none;
+            padding: 10px 25px;
+            border-radius: 4px;
+            cursor: pointer;
+            font-weight: 600;
+            text-transform: uppercase;
+            font-size: 14px;
+        }
+        
+        .close-btn:hover {
+            background-color: #444444;
+        }
+    </style>
+ /* Styling for the category bar background */
+    .category-navbar {
+        display: flex;
+        justify-content: center; /* Centers the links horizontally */
+        align-items: center;
+        gap: 30px; /* Space between each category link */
+        background-color: #ffffff; /* Clean white background */
+        padding: 12px 20px;
+        border-bottom: 1px solid #eeeeee; /* Delicate line separator underneath */
+        font-family: 'Helvetica Neue', Arial, sans-serif;
+        overflow-x: auto; /* Allow horizontal scroll on mobile devices */
+        white-space: nowrap; /* Prevents links from breaking into multiple lines on mobile */
+    }
+
+    /* Base styling for individual category links */
+    .category-link {
+        color: #555555; /* Subtle charcoal text color */
+        text-decoration: none;
+        font-size: 14px;
+        font-weight: 500;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        padding: 6px 0;
+        position: relative; /* Needed for the animated hover underline */
+        transition: color 0.3s ease;
+    }
+
+    /* Hover effect for links */
+    .category-link:hover {
+        color: #111111; /* Darkens text on hover */
+    }
+
+    /* High-end underline effect that appears when hovering over a link */
+    .category-link::after {
+        content: '';
+        position: absolute;
+        width: 100%;
+        transform: scaleX(0);
+        height: 1.5px;
+        bottom: 0;
+        left: 0;
+        background-color: #111111;
+        transform-origin: bottom right;
+        transition: transform 0.25s ease-out;
+    }
+
+    .category-link:hover::after {
+        transform: scaleX(1);
+        transform-origin: bottom left;
+    }
+
+    /* Optional highlight style for the active page/category */
+    .category-link.active {
+        color: #111111;
+        font-weight: 600;
+    }
+    
+    .category-link.active::after {
+        transform: scaleX(1);
+    }
+
+    /* Optional style to make a "Sale" link stand out */
+    .category-link.sale-tag {
+        color: #b12704; /* Classy red tint for markdown/sale items */
+    }
+    .category-link.sale-tag::after {
+        background-color: #b12704;
+    }
+
+    /* Hide ugly scrollbar on mobile screens while maintaining touch swipe behavior */
+    .category-navbar::-webkit-scrollbar {
+        display: none;
+    }
+    .category-navbar {
+        -ms-overflow-style: none;  /* IE and Edge */
+        scrollbar-width: none;  /* Firefox */
+    }
+</style>
+body {
+            font-family: 'Helvetica Neue', Arial, sans-serif;
+            margin: 0;
+            padding: 40px 20px;
+            background-color: #fcfcfc;
+        }
+
+        h1 {
+            text-align: center;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            margin-bottom: 40px;
+            color: #111111;
+        }
+
+        /* The grid setup that groups your products together */
+        .products-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+

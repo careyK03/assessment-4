@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Elegant Handbag</title>
+    <link rel="stylesheet" href="style.css">
+    <a href="index.html">Back</a>
+</head>
+
+<body>
+
+    <div id="menu">
+        <a href="index.html">Home</a>
+        <a href="About.html">About</a>
+        <a href="contact.html">Contact</a>
+    </div>
+
+    <div class="product-details">
+
+        <div class="product-image">
+            <img src="images/dress1.jpg" alt="Elegant dress">
+        </div>
+
+        <div class="product-information">
+
+            <h1>Elegant dress</h1>
+
+            <p class="details-price">R499.00</p>
+
+            <p>
+               A beautiful burgundy evening dress with a feminine, elegant design. Perfect for weddings, parties, dinners and other special occasions.
+            </p>
+            <h2>Product Information</h2>
+
+<table class="product-table">
+  <p>Features:
+
+One-shoulder design
+Flattering fitted waist
+Long flowing skirt
+Elegant finish
+Suitable for special occasions
+    </p>
+    <table class="product-table">
+    <tr>
+        <th>Product</th>
+        <td>Dress</td>
+    </tr>
+
+    <tr>
+        <th>Material</th>
+        <td>Polyester blend</td>
+    </tr>
+
+    <tr>
+        <th>Size</th>
+        <td>S-XL</td>
+    </tr>
+
+    <tr>
+        <th>Style</th>
+        <td>Evening/Formal Dress</td>
+    </tr>
+
+    <tr>
+        <th>Colour</th>
+        <td>Pink</td>
+    </tr>
+
+    <tr>
+        <th>Availability</th>
+        <td>In Stock</td>
+    </tr>
+</table>
+
+    
+   
+    <!-- The Buy Now Button -->
+    <button class="boutique-btn" onclick="showPopup()">Buy Now</button>
+
+    <!-- The Custom Message Box Layout -->
+    <div class="modal-overlay" id="cartModal">
+        <div class="modal-box">
+            <h3>Shopping Bag</h3>
+            <p>Item has been added to your cart!</p>
+            <button class="close-btn" onclick="hidePopup()">Continue Shopping</button>
+        </div>
+    </div>
+
+    <!-- JavaScript to trigger the custom popup without browser text -->
+    <script>
+        function showPopup() {
+            document.getElementById('cartModal').style.display = 'flex';
+        }
+
+        function hidePopup() {
+            document.getElementById('cartModal').style.display = 'none';
+        }
+    </script>
+
+    <script>
+    function showPopup() {
+        document.getElementById('cartModal').style.display = 'flex';
+        
+     
+        setTimeout(function() {
+            window.location.href = "index.html"; 
+        }, 1500); 
+    }
+
+    function hidePopup() {
+        document.getElementById('cartModal').style.display = 'none';
+    }
+</script>   
+
+</body>
+
+</html>

@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Fashion Glasses</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <div id="menu">
+        <a href="index.html">Home</a>
+        <a href="About.html">About</a>
+        <a href="contact.html">Contact</a>
+         <a href="index.html">Back</a>
+    </div>
+
+    <div class="product-details">
+
+        <div class="product-image">
+            <img src="images/glasses2.jpg" alt="hat">
+              
+        </div>
+
+        <div class="product-information">
+
+            <h1>Fashion Glasses</h1>
+
+            <p class="details-price">R299.00</p>
+
+            <p>
+            Stylish oversized fashion glasses featuring a decorative frame. A perfect accessory for adding a glamorous touch to your everyday look.
+            </p>
+            <h2>Product Information</h2>
+
+<table class="product-table">
+  <p>Features:
+
+Oversized frame
+Stylish decorative detailing
+Gradient lenses
+Fashion-forward design
+Suitable for casual and dressy outfits
+    </p>
+           <table class="product-table">
+    <tr>
+        <th>Product</th>
+        <td>Glasses</td>
+    </tr>
+
+    <tr>
+        <th>Material</th>
+        <td>Plastic frame</td>
+    </tr>
+
+    <tr>
+        <th>Size</th>
+        <td>one size</td>
+    </tr>
+
+    <tr>
+        <th>Style</th>
+        <td>Oversized Fashion Glasses</td>
+    </tr>
+
+    <tr>
+        <th>Colour</th>
+        <td>Black / Clear</td>
+    </tr>
+
+    <tr>
+        <th>Availability</th>
+        <td>In Stock</td>
+    </tr>
+</table>
+  <!-- The Buy Now Button -->
+    <button class="boutique-btn" onclick="showPopup()">Buy Now</button>
+
+    <!-- The Custom Message Box Layout -->
+    <div class="modal-overlay" id="cartModal">
+        <div class="modal-box">
+            <h3>Shopping Bag</h3>
+            <p>Item has been added to your cart!</p>
+            <button class="close-btn" onclick="hidePopup()">Continue Shopping</button>
+        </div>
+   
+
+    <!-- JavaScript to trigger the custom popup without browser text -->
+    <script>
+        function showPopup() {
+            document.getElementById('cartModal').style.display = 'flex';
+        }
+
+        function hidePopup() {
+            document.getElementById('cartModal').style.display = 'none';
+        }
+        
+            <script>
+        function showPopup() {
+            document.getElementById('cartModal').style.display = 'flex';
+        }
+
+        function hidePopup() {
+            document.getElementById('cartModal').style.display = 'none';
+        }
+    </script>
+
+    <script>
+    function showPopup() {
+        document.getElementById('cartModal').style.display = 'flex';
+        
+     
+        setTimeout(function() {
+            window.location.href = "index.html"; 
+        }, 1500); 
+    }
+
+    function hidePopup() {
+        document.getElementById('cartModal').style.display = 'none';
+    }
+    </script>
+
+        
+
+    </div>
+</body>
+
+</html>

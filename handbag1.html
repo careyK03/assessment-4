@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Elegant Handbag</title>
+    <link rel="stylesheet" href="style.css">
+    <a href="index.html">Back</a>
+</head>
+
+<body>
+
+    <div id="menu">
+        <a href="index.html">Home</a>
+        <a href="About.html">About</a>
+        <a href="contact.html">Contact</a>
+    </div>
+
+    <div class="product-details">
+
+        <div class="product-image">
+            <img src="images/handbag3.jpg" alt="Elegant Handbag">
+        </div>
+
+        <div class="product-information">
+
+            <h1>Elegant Handbag</h1>
+
+            <p class="details-price">R1499.00</p>
+
+            <p>
+                A beautiful and elegant handbag perfect for
+                everyday use and special occasions.
+            </p>
+            <h2>Product Information</h2>
+
+<table class="product-table">
+    <tr>
+        <th>Product</th>
+        <td>Elegant Handbag</td>
+    </tr>
+
+    <tr>
+        <th>Weight</th>
+        <td>0.8 kg</td>
+    </tr>
+
+    <tr>
+        <th>Dimensions</th>
+        <td>30 cm × 25 cm × 12 cm</td>
+    </tr>
+
+    <tr>
+        <th>Material</th>
+        <td>Leather</td>
+    </tr>
+
+    <tr>
+        <th>Colour</th>
+        <td>Black</td>
+    </tr>
+
+    <tr>
+        <th>Availability</th>
+        <td>In Stock</td>
+    </tr>
+</table>
+
+            <p><strong>Colour:</strong> Black</p>
+
+            <p><strong>Material:</strong> Leather</p>
+  <!-- The Buy Now Button -->
+    <button class="boutique-btn" onclick="showPopup()">Buy Now</button>
+
+    <!-- The Custom Message Box Layout -->
+    <div class="modal-overlay" id="cartModal">
+        <div class="modal-box">
+            <h3>Shopping Bag</h3>
+            <p>Item has been added to your cart!</p>
+            <button class="close-btn" onclick="hidePopup()">Continue Shopping</button>
+        </div>
+    </div>
+
+    <!-- JavaScript to trigger the custom popup without browser text -->
+    <script>
+        function showPopup() {
+            document.getElementById('cartModal').style.display = 'flex';
+        }
+
+        function hidePopup() {
+            document.getElementById('cartModal').style.display = 'none';
+        }
+        
+            <script>
+        function showPopup() {
+            document.getElementById('cartModal').style.display = 'flex';
+        }
+
+        function hidePopup() {
+            document.getElementById('cartModal').style.display = 'none';
+        }
+    </script>
+
+    <script>
+    function showPopup() {
+        document.getElementById('cartModal').style.display = 'flex';
+        
+     
+        setTimeout(function() {
+            window.location.href = "index.html"; 
+        }, 1500); 
+    }
+
+    function hidePopup() {
+        document.getElementById('cartModal').style.display = 'none';
+    }
+    </script>
+        </div>
+
+    </div>
+
+</body>
+
+</html>
